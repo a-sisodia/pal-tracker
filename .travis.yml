@@ -32,7 +32,7 @@ jobs:
         - echo "Deploying $RELEASE_TAG to Cloud Foundry"
       deploy:
         provider: cloudfoundry
-        api: $CF_API_URL
+        api: https://apps.sys.evans.pal.pivotal.io
         username: $CF_USERNAME
         password: $CF_PASSWORD
         organization: $CF_ORG
