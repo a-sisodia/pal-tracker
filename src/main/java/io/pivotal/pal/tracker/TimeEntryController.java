@@ -16,7 +16,7 @@ public class TimeEntryController {
         this.timeEntriesRepo = timeEntriesRepo;
     }
 
-    @PostMapping
+    @PostMapping //POST Mapping method
     public ResponseEntity<TimeEntry> create(@RequestBody TimeEntry timeEntry) {
         TimeEntry createdTimeEntry = timeEntriesRepo.create(timeEntry);
 
